@@ -1,0 +1,7 @@
+name: AskPlaceholder
+version: @version@
+main: com.github.fernthedev.askplaceholder.AskPlaceholder
+api-version: 1.16
+authors: [ Fernthedev ]
+depend:
+  - PlaceHolderAPI
