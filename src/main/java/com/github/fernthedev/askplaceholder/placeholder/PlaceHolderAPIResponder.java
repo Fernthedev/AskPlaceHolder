@@ -61,7 +61,7 @@ public class PlaceHolderAPIResponder extends PluginMessageHandler {
         }
 
         if (placeholder == null) {
-            placeholder = PlaceholderAPI.setPlaceholders(player, placeholderOld);
+            placeholder = PlaceHolderUtil.setPlaceholders(player, placeholderOld);
             if (placeholder.equalsIgnoreCase(placeholderOld)) {
                 placeholder = ProxyAskPlaceHolder.PLACEHOLDER_NOT_FOUND;
             }

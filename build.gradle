@@ -31,7 +31,7 @@ repositories {
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT'
-    implementation 'com.github.Fernthedev.FernAPI:spigot:82b75af3da'
+    implementation 'com.github.Fernthedev.FernAPI:spigot:e58e03572d'
     compileOnly group: 'me.clip', name: 'placeholderapi', version: '2.10.9'
 }
 
@@ -46,7 +46,8 @@ jar.dependsOn shadowJar
 shadowJar {
     minimize()
     relocate 'fr.minuskube.inv', "${project.group}.smartinv"
-    relocate 'com.github.fernthedev', "${project.group}.fernstuff"
+    relocate 'com.github.fernthedev.fernapi', "${project.group}.fernstuff.fernapi"
+    relocate 'com.github.fernthedev.config', "${project.group}.fernstuff.config"
     relocate 'co.aikar.commands', "${project.group}.acf"
     relocate 'co.aikar.locales', "${project.group}.locales"
 

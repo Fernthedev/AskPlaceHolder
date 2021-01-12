@@ -53,11 +53,11 @@ public class VanishResponder extends PluginMessageHandler {
         Player player = (Player) Universal.getMethods().convertFPlayerToPlayer(data.getPlayer());
 
 
-        newData.addData(String.valueOf(isVanished(player)));
-
         newData.addData(uuid);
 
-        Universal.debug("Vanish response: " + newData);
+        newData.addData(String.valueOf(isVanished(player)));
+
+        Universal.debug("Vanish response: " + isVanished(player));
 
         Universal.getMessageHandler().sendPluginData(newData);
 
